@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar Js</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="display" class="monthYear">
+        May 2020
+      </h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+          </tr>
+        </thead>
+        <tbody id="calendar"></tbody>
+      </table>
+      <div class="btn-group">
+        <button id="next" class="next">Next</button>
+        <button class="previous" id="previous">Previous</button>
+        <button id="today" class="today">Today</button>
+      </div>
+      <div class="pick-date">
+        <select name="month" id="month">
+          <option value="" disabled selected>Month</option>
+        </select>
+
+        <select name="year" id="year">
+          <option value="" disabled selected>Year</option>
+        </select>
+      </div>
+    </div>
+    <script src="calendar.js"></script>
+  </body>
+</html>
